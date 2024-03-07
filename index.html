@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">PRICE CALCULATOR</h1>
+  </header>
+
+  <section class="calculator-container">
+    <div class="inputs-section">
+      <label for="product_lbl" class="inputs-section__info-label" >Product</label>
+      <div class="box">
+        <select id="product_value" class="inputs-section__dropbtn-input">
+          <option selected value="0">Select a product</option>
+          <option value="100">Apple</option>
+          <option value="150">Pear</option>
+          <option value="200">Pineapple</option>
+        </select>
+      </div>
+      
+      <label id="discount_lbl" class="inputs-section__info-label" >Discount 20%</label>
+      <input id="discount_value" class="inputs-section__info-input" type="range" value="20" min="0" max="100" step="1">
+
+      <label id="tax_lbl" class="inputs-section__info-label" >Tax 11%</label>
+      <input id="tax_value" class="inputs-section__info-input" type="range" value="11" min="0" max="100" step="1">
+
+      <label id="membership_lbl" class="inputs-section__info-label" >Membership discount 5%</label>
+      <input id="membership_value" class="inputs-section__info-input" type="range" value="5" min="0" max="100" step="1">
+
+    </div>
+
+    <div class="result-section">
+      <div class="results">
+
+        <p class="results__price-amount">Final price</p>
+        
+        <p class="results__price-value">0$</p>
+        
+      </div>
+      
+      <button class="result-section__reset">Reset</button>
+
+    </div>
+  </section>
+  
+  <div class="attribution">
+    <a href="https://www.linkedin.com/in/jsebastiansaavedra/" target="_blank">Juan Saavedra</a>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
